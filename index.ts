@@ -1,12 +1,10 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
+import userRoutes from './routes/userRoutes';
 
 const app = express();
 
 app.use(express.json());
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome to the RESTful API!');
-});
+app.use('/api', userRoutes);
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
