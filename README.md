@@ -1,2 +1,2 @@
 # user_routes
-RESTful API on NodeJS
+RESTful API for user registering
